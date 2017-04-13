@@ -1,0 +1,41 @@
+{
+  "name": "node-express-coding-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "coding challenge for Node backend position at IoT Startup",
+  "main": "server.js",
+  "now": {
+    "engines": {
+      "node": "6.x.x"
+    },
+    "alias": "nakedmath.party"
+  },
+  "scripts": {
+    "test": "mocha --no-timeouts test/test_app.js",
+    "start": "node server.js",
+    "readme": "node ./node_modules/.bin/node-readme",
+    "now-start": "NODE_ENV=production node server.js",
+    "deploy": "now -e LOG_SECRET=@log"
+  },
+  "author": "John Trecker",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "colors": "^1.1.2",
+    "express": "^4.15.2",
+    "now-logs": "0.0.7",
+    "request": "^2.81.0",
+    "response-time": "^2.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "sinon": "^2.1.0",
+    "sinon-chai": "^2.9.0"
+  }
+}

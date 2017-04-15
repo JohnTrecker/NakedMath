@@ -16,6 +16,13 @@ app.use('*', (req, res, next) => {
 
 app.use('/', router);
 
+app.get('*', (req, res, next) => {
+  let err = new Error();
+  err.status = 400
+  next(err);
+  return
+})
+
 // exeption and error handling
 app.use((err, req, res, next) => {
   if (err.status !== 404) {

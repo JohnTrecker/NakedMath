@@ -4,7 +4,7 @@ Thank you for taking the time to review my code! NakedMath is a REST API that ca
 
 ## Code Example
 
-`curl -i -H "Accept: application/json" "https://nakedmath.party/multiply/3*5"`
+`curl -i -H "Accept: application/json" "https://nakedmath.party/multiply/3&5"`
 // { result: 15 }
 
 ## Installation
